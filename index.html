@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KIKITRON | Servicio Técnico</title>
+
+<meta name="description"
+content="KIKITRON - Servicio técnico y reparación de equipos electrónicos.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+/* HEADER */
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 18px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* INICIO */
+
+.hero {
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 9vw, 75px);
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto 30px;
+    color: #555;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+/* SECCIONES */
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.title h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.title p {
+    color: #777;
+    margin-top: 8px;
+}
+
+/* EQUIPOS */
+
+.equipos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.equipo {
+    border: 1px solid #ddd;
+    padding: 35px 20px;
+    text-align: center;
+    background: #fff;
+    transition: .25s;
+}
+
+.equipo:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+.icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.equipo h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.equipo p {
+    font-size: 14px;
+    color: #777;
+}
+
+.equipo:hover p {
+    color: #ccc;
+}
+
+/* INFORMACION */
+
+.info {
+    background: #000;
+    color: #fff;
+    max-width: none;
+}
+
+.info-content {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    max-width: 650px;
+    margin: auto;
+    color: #bbb;
+}
+
+/* CONTACTO */
+
+.contacto {
+    text-align: center;
+}
+
+.telefono {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* FOOTER */
+
+footer {
+    background: #000;
+    color: #777;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 13px;
+}
+
+footer strong {
+    color: #fff;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #000;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    box-shadow: 0 5px 20px #aaa;
+}
+
+/* MOVIL */
+
+@media (max-width: 700px) {
+
+    .nav a {
+        display: none;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .equipos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section {
+        padding: 65px 15px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .equipos {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="nav">
+
+    <div class="logo">
+        KIKITRON
+    </div>
+
+    <div>
+        <a href="#equipos">Equipos</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+</div>
+
+</header>
+
+
+<!-- INICIO -->
+
+<div class="hero">
+
+    <h1>KIKITRON</h1>
+
+    <p>
+        Servicio técnico y reparación de equipos
+        electrónicos.
+    </p>
+
+    <a
+        class="btn"
+        href="https://wa.me/5356754449"
+        target="_blank">
+
+        CONTACTAR
+
+    </a>
+
+</div>
+
+
+<!-- EQUIPOS -->
+
+<section id="equipos">
+
+<div class="title">
+
+    <h2>Equipos que reparamos</h2>
+
+    <p>
+        Servicio técnico y reparación electrónica
+    </p>
+
+</div>
+
+
+<div class="equipos">
+
+
+<div class="equipo">
+
+    <div class="icon">🔊</div>
+
+    <h3>Equipos de Audio</h3>
+
+    <p>
+        Amplificadores, bocinas,
+        sistemas de sonido y más.
+    </p>
+
+</div>
+
+
+<div class="equipo">
+
+    <div class="icon">⚡</div>
+
+    <h3>Inversores</h3>
+
+    <p>
+        Diagnóstico y reparación
+        de inversores.
+    </p>
+
+</div>
+
+
+<div class="equipo">
+
+    <div class="icon">🔌</div>
+
+    <h3>Fuentes de Alimentación</h3>
+
+    <p>
+        Fuentes, cargadores,
+        adaptadores y circuitos.
+    </p>
+
+</div>
+
+
+<div class="equipo">
+
+    <div class="icon">📱</div>
+
+    <h3>Teléfonos</h3>
+
+    <p>
+        Software, mantenimiento
+        y reparación.
+    </p>
+
+</div>
+
+
+<div class="equipo">
+
+    <div class="icon">🎮</div>
+
+    <h3>Consolas</h3>
+
+    <p>
+        Diagnóstico y reparación
+        de consolas.
+    </p>
+
+</div>
+
+
+<div class="equipo">
+
+    <div class="icon">💾</div>
+
+    <h3>Memorias USB</h3>
+
+    <p>
+        Diagnóstico y recuperación
+        de información.
+    </p>
+
+</div>
+
+
+<div class="equipo">
+
+    <div class="icon">🖥️</div>
+
+    <h3>Equipos Electrónicos</h3>
+
+    <p>
+        Reparación de placas
+        y componentes electrónicos.
+    </p>
+
+</div>
+
+
+<div class="equipo">
+
+    <div class="icon">🛠️</div>
+
+    <h3>Otros Equipos</h3>
+
+    <p>
+        Consulta por otros equipos
+        que necesites reparar.
+    </p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- INFORMACIÓN -->
+
+<div class="info">
+
+<section>
+
+<div class="info-content">
+
+    <h2>Servicio Técnico</h2>
+
+    <p>
+        Diagnóstico, reparación y mantenimiento
+        de equipos electrónicos.
+        Escríbenos para consultar sobre tu equipo.
+    </p>
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- CONTACTO -->
+
+<section id="contacto">
+
+<div class="contacto">
+
+    <div class="title">
+
+        <h2>Contacto</h2>
+
+        <p>
+            ¿Necesitas reparar un equipo?
+        </p>
+
+    </div>
+
+
+    <div class="telefono">
+        +53 5675 4449
+    </div>
+
+
+    <a
+        class="btn"
+        href="https://wa.me/5356754449"
+        target="_blank">
+
+        ESCRIBIR POR WHATSAPP
+
+    </a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 <strong>KIKITRON</strong><br>
+    Servicio Técnico y Electrónica
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/5356754449"
+    target="_blank"
+    aria-label="WhatsApp">
+
+    ☎
+
+</a>
+
+</body>
+  </html>
